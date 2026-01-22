@@ -1,0 +1,114 @@
+category,subcategory,variable
+General,Frequency,Freq_HAL
+General,Frequency,Freq_KF
+General,Frequency,Freq_SUBTLEXUS
+General,Frequency,Freq_SUBTLEXUS_Zipf
+General,Frequency,Freq_SUBTLEXUK
+General,Frequency,Freq_SUBTLEXUK_Zipf
+General,Frequency,Freq_Blog
+General,Frequency,Freq_Twitter
+General,Frequency,Freq_News
+General,Frequency,Freqtraj_TASA
+General,Frequency,Cumfreq_TASA
+General,Contextual Diversity,CD_SUBTLEXUS
+General,Contextual Diversity,CD_SUBTLEXUK
+General,Contextual Diversity,CD_Blog
+General,Contextual Diversity,CD_Twitter
+General,Contextual Diversity,CD_News
+General,Age of Acquisition,AoA_LWV
+General,Age of Acquisition,AoA_Kuper
+General,Familarity,Fam_Brys
+General,Familarity,Prevalence_Brys
+Orthographic,Orthographic Length,NLett
+Orthographic,Graphotactic Probabilities,BigramF_Avg_U_Log
+Orthographic,Graphotactic Probabilities,TrigramF_Avg_U_Log
+Orthographic,Graphotactic Probabilities,UnigramF_Avg_U_Log
+Orthographic,Graphotactic Probabilities,BigramF_Avg_C_Log
+Orthographic,Graphotactic Probabilities,TrigramF_Avg_C_Log
+Orthographic,Graphotactic Probabilities,UnigramF_Avg_C_Log
+Orthographic,Orthographic Neighborhood,OLD20F
+Orthographic,Orthographic Neighborhood,PLD20F
+Orthographic,Orthographic Neighborhood,OLD20
+Orthographic,Orthographic Neighborhood,Orth_N
+Orthographic,Orthographic Neighborhood,Orth_N_Freq_L
+Orthographic,Orthographic Neighborhood,Orth_N_Freq_G
+Orthographic,Orthographic Neighborhood,Orth_N_Freq
+Orthographic,Orthographic Neighborhood,Orth_N_Freq_L_Mean
+Orthographic,Orthographic Neighborhood,Orth_Spread
+Orthographic,Orthographic Neighborhood,Orth_N_Freq_G_Mean
+Orthographic,Orthographic Neighborhood,OUP
+Phonological,Phonological Length,NPhon
+Phonological,Phonological Length,NSyll
+Phonological,Phonotactic Probabilities,TriphonP_Un
+Phonological,Phonotactic Probabilities,TriphonP_St
+Phonological,Phonotactic Probabilities,BiphonP_St
+Phonological,Phonotactic Probabilities,BiphonP_Un
+Phonological,Phonotactic Probabilities,Phonographic_N
+Phonological,Phonotactic Probabilities,UniphonP_Un_C
+Phonological,Phonotactic Probabilities,UniphonP_St_C
+Phonological,Phonotactic Probabilities,UniphonP_St
+Phonological,Phonotactic Probabilities,UniphonP_Un
+Phonological,Phonological Neighborhood,Phonographic_N_Freq
+Phonological,Phonological Neighborhood,Phon_Spread
+Phonological,Phonological Neighborhood,Phon_N_Freq
+Phonological,Phonological Neighborhood,Phon_N
+Phonological,Phonological Neighborhood,PUP
+Phonological,Phonological Neighborhood,PLD20
+Semantic,Polysemy,Nsenses_WordNet
+Semantic,Polysemy,Nmeanings_Websters
+Semantic,Concreteness,Conc_Brys
+Semantic,Semantic Neighborhood,Sem_Diversity
+Semantic,Semantic Neighborhood,Sem_N_D_Taxonomic_N10
+Semantic,Semantic Neighborhood,Sem_N_D_Taxonomic_N25
+Semantic,Semantic Neighborhood,Sem_N_D_Taxonomic_N50
+Semantic,Semantic Neighborhood,Sem_N_D_Taxonomic_N3
+Semantic,Semantic Neighborhood,Sem_N
+Semantic,Semantic Neighborhood,Sem_N_D
+Semantic,Semantic Neighborhood,Assoc_Freq_Token123
+Semantic,Semantic Neighborhood,Assoc_Freq_Token
+Semantic,Semantic Neighborhood,Assoc_Freq_Type
+Semantic,Semantic Neighborhood,Assoc_Freq_Type123
+Semantic,Specific Semantic Features,Head_Lanc
+Semantic,Specific Semantic Features,Auditory_Lanc
+Semantic,Specific Semantic Features,Haptic_Lanc
+Semantic,Specific Semantic Features,Hand_Arm_Lanc
+Semantic,Specific Semantic Features,Gustatory_Lanc
+Semantic,Specific Semantic Features,Olfactory_Lanc
+Semantic,Specific Semantic Features,Mouth_Throat_Lanc
+Semantic,Specific Semantic Features,Mink_Action_Lanc
+Semantic,Specific Semantic Features,Torso_Lanc
+Semantic,Specific Semantic Features,Foot_Leg_Lanc
+Semantic,Specific Semantic Features,Interoceptive_Lanc
+Semantic,Specific Semantic Features,Visual_Lanc
+Semantic,Specific Semantic Features,Mink_Perceptual_Lanc
+Semantic,Emotion,Valence_NRC
+Semantic,Emotion,Arousal_NRC
+Semantic,Emotion,Dominance_NRC
+Orth-Phon,Consistency,Consistency_Token_FF_C
+Orth-Phon,Consistency,Consistency_Type_FF_C
+Orth-Phon,Consistency,Consistency_Token_FB_O
+Orth-Phon,Consistency,Consistency_Type_FB_O
+Orth-Phon,Consistency,Consistency_Type_FF_O
+Orth-Phon,Consistency,Consistency_Token_FF_O
+Orth-Phon,Consistency,Consistency_Type_FF_R
+Orth-Phon,Consistency,Consistency_Token_FF_R
+Orth-Phon,Consistency,Consistency_Type_FB_R
+Orth-Phon,Consistency,Consistency_Token_FB_R
+Orth-Phon,Consistency,Consistency_Token_FB_C
+Orth-Phon,Consistency,Consistency_Type_FB_C
+Orth-Phon,Consistency,Consistency_Type_FB
+Orth-Phon,Consistency,Consistency_Token_FB
+Orth-Phon,Consistency,Consistency_Token_FB_ON
+Orth-Phon,Consistency,Consistency_Token_FB_N
+Orth-Phon,Consistency,Consistency_Type_FB_N
+Orth-Phon,Consistency,Consistency_Type_FB_ON
+Orth-Phon,Consistency,Consistency_Token_FF_ON
+Orth-Phon,Consistency,Consistency_Type_FF_ON
+Orth-Phon,Consistency,Consistency_Token_FF_N
+Orth-Phon,Consistency,Consistency_Type_FF_N
+Orth-Phon,Consistency,Consistency_Token_FF
+Orth-Phon,Consistency,Consistency_Type_FF
+Morphology,Family size,ROOT1_PFMF
+Morphology,Family size,ROOT1_FamSize
+Morphology,Family size,ROOT1_Freq_HAL
+Morphology,Morphological Length,NMorph
