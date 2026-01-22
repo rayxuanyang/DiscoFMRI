@@ -1,5 +1,5 @@
 # DiscoFMRI
-Code repositry for the Multifaceted neural representation of words in naturalistic language.
+Code repository for the Multifaceted neural representation of words in naturalistic language.
 
 ### SCOPE
 This folder contains the scripts used for extracting pscholinguistic valeus from the SCOPE metabase
