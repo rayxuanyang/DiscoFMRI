@@ -16,7 +16,9 @@ This folder contains the scripts used running Exploratory Factor Analysis (EFA) 
 
 
 ### Data
-* `List_113variables_sorted.csv`: The original 113 variables selected from `Gao et al., 2022`.
-* `SCOPE_lemma_var106.csv`: The final dataset containing 13,850 words and 106 variables.
-* `SUBTLEX-UK.xlsx`: The file downloaded from the SUTLEX-UK database containing the POS tags and lemmas.
-* `SUBTLEX-US frequency list with PoS and Zipf information.xlsx`: he file downloaded from the SUTLEX-US database containing the POS tags.
+* `./data/SCOPE/List_113variables_sorted.csv`: The original 113 variables selected from `Gao et al., 2022`.
+* `./data/SCOPE/SCOPE_lemma_var106.csv`: The final dataset containing 13,850 words and 106 variables.
+* `./data/SCOPE/SUBTLEX-UK.xlsx`: The file downloaded from the SUTLEX-UK database containing the POS tags and lemmas.
+* `./data/SCOPE/SUBTLEX-US frequency list with PoS and Zipf information.xlsx`: he file downloaded from the SUTLEX-US database containing the POS tags.
+* `./data/FactorAnalysis/data_FactorAnalysis_var106.csv`: The final dataset used for Factor Analysis.
+* `./data/FactorAnalysis/df_FA8_behav_merged.csv`: The final dataset used for examining the behavioral correspondance.
