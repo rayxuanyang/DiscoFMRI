@@ -15,6 +15,7 @@ This folder contains the scripts used for running Exploratory Factor Analysis (E
 * `Batch_makeTables_S1.ipynb`: Make Table S1. 
 
 ### fMRI
+* `./OrganizeDataset.ipynb`: Select participants and narratives from the raw Narratives dataset.
 This folder contains the scripts used for running fMRI analysis and making figures.
 
 ### Data
