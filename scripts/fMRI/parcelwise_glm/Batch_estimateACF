@@ -1,0 +1,10 @@
+mask=/work/desai-lab/xuanyang/Project/Semantic/analysis/FactorAnalysis/github/FactorAnalysis_fMRI/scripts/fMRI/masks/rs_mask_GM_33.nii.gz
+for factor in {1..8}; do
+    prefix="FA${factor}"
+
+    3dFWHMx \
+        -mask "$mask" \
+        -ACF NULL \
+        -input "${prefix}_resid+tlrc" \
+        > "${prefix}_ACF.txt"
+done

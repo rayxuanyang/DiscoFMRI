@@ -1,0 +1,9 @@
+**/.ipynb_checkpoints/
+__pycache__/
+data/SCOPE_nonword.csv
+data/SCOPE_word.csv
+data/SCOPE/SCOPE_word.csv
+data/SCOPE/SCOPE_nonword.csv
+data/SCOPE/data_with_metadata.xlsx
+
+*.ipynb.bak_*

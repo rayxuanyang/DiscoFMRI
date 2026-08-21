@@ -1,0 +1,9 @@
+/cm/local/apps/slurm/var/spool/job21748935/slurm_script: line 24: start_env_hyperalignment: command not found
+usage: conda [-h] [-v] [--no-plugins] [-V] COMMAND ...
+conda: error: argument COMMAND: invalid choice: 'deactivate' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'notices', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'build', 'content-trust', 'convert', 'debug', 'develop', 'doctor', 'index', 'inspect', 'metapackage', 'render', 'repoquery', 'skeleton', 'verify', 'server', 'token', 'pack', 'env', 'repo')
+usage: conda [-h] [-v] [--no-plugins] [-V] COMMAND ...
+conda: error: argument COMMAND: invalid choice: 'activate' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'notices', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'build', 'content-trust', 'convert', 'debug', 'develop', 'doctor', 'index', 'inspect', 'metapackage', 'render', 'repoquery', 'skeleton', 'pack', 'repo', 'verify', 'env', 'token', 'server')
+Traceback (most recent call last):
+  File "/work/desai-lab/xuanyang/Project/Semantic/dissemination/github/DiscoFMRI/scripts/SCOPE/Batch_SCOPE_FillinLemmas_spacyonly.py", line 1, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'

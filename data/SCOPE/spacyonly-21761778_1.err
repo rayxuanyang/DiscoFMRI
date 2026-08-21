@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "/work/xy6/ENVS/spacy/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Lemma_UKUS'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/desai-lab/xuanyang/Project/Semantic/dissemination/github/DiscoFMRI/scripts/SCOPE/Batch_SCOPE_FillinLemmas_spacyonly.py", line 85, in <module>
+    df_spacyonly = lemmatize_step3only(df_SCOPE,nlp)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/desai-lab/xuanyang/Project/Semantic/dissemination/github/DiscoFMRI/scripts/SCOPE/Batch_SCOPE_FillinLemmas_spacyonly.py", line 59, in lemmatize_step3only
+    df_SCOPE['Lemma'] = df_SCOPE['Lemma_UKUS']
+                        ~~~~~~~~^^^^^^^^^^^^^^
+  File "/work/xy6/ENVS/spacy/lib/python3.12/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/xy6/ENVS/spacy/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Lemma_UKUS'

@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "/work/xy6/ENVS/spacy/lib/python3.12/site-packages/pandas/io/formats/csvs.py", line 270, in save
+    self._save()
+  File "/work/xy6/ENVS/spacy/lib/python3.12/site-packages/pandas/io/formats/csvs.py", line 275, in _save
+    self._save_body()
+  File "/work/xy6/ENVS/spacy/lib/python3.12/site-packages/pandas/io/formats/csvs.py", line 313, in _save_body
+    self._save_chunk(start_i, end_i)
+  File "/work/xy6/ENVS/spacy/lib/python3.12/site-packages/pandas/io/formats/csvs.py", line 324, in _save_chunk
+    libwriters.write_csv_rows(
+  File "writers.pyx", line 73, in pandas._libs.writers.write_csv_rows
+OSError: [Errno 122] Disk quota exceeded
+
+During handling of the above exception, another exception occurred:
+
+OSError: [Errno 122] Disk quota exceeded
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/work/desai-lab/xuanyang/Project/Semantic/dissemination/github/DiscoFMRI/scripts/SCOPE/Batch_SCOPE_FillinLemmas_spacyonly.py", line 35, in <module>
+    df.loc[df['Status']==label].to_csv(file,index=False)
+  File "/work/xy6/ENVS/spacy/lib/python3.12/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/work/xy6/ENVS/spacy/lib/python3.12/site-packages/pandas/core/generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/xy6/ENVS/spacy/lib/python3.12/site-packages/pandas/io/formats/format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "/work/xy6/ENVS/spacy/lib/python3.12/site-packages/pandas/io/formats/csvs.py", line 251, in save
+    with get_handle(
+  File "/work/xy6/ENVS/spacy/lib/python3.12/site-packages/pandas/io/common.py", line 157, in __exit__
+    self.close()
+  File "/work/xy6/ENVS/spacy/lib/python3.12/site-packages/pandas/io/common.py", line 144, in close
+    handle.close()
+OSError: [Errno 122] Disk quota exceeded
