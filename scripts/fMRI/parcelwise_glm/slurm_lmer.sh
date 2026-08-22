@@ -9,8 +9,8 @@
 ### %a specifies that the output file for each subject will be named according to their array ID
 
 # Where to output log files?
-#SBATCH --output='/work/desai-lab/xuanyang/Project/Semantic/analysis/ParametricModulation/Nastase/allstories/FactorAnalysis/models/Nvar113NFA8_LPAC_multipleReg_unsmoothed/FA8_HCPex/results/secondlevel/nonthreshold_LMEr_r1.1/lmer-%A_%a.log'
-#SBATCH --error='/work/desai-lab/xuanyang/Project/Semantic/analysis/ParametricModulation/Nastase/allstories/FactorAnalysis/models/Nvar113NFA8_LPAC_multipleReg_unsmoothed/FA8_HCPex/results/secondlevel/nonthreshold_LMEr_r1.1/lmer-%A_%a.err'
+#SBATCH --output='/work/desai-lab/xuanyang/Project/Semantic/analysis/ParametricModulation/Nastase/allstories/FactorAnalysis/models/Nvar113NFA8_LPAC_multipleReg_unsmoothed/FA8_HCPex/results/secondlevel/nonthreshold_LMEr_r1.2/lmer-%A_%a.log'
+#SBATCH --error='/work/desai-lab/xuanyang/Project/Semantic/analysis/ParametricModulation/Nastase/allstories/FactorAnalysis/models/Nvar113NFA8_LPAC_multipleReg_unsmoothed/FA8_HCPex/results/secondlevel/nonthreshold_LMEr_r1.2/lmer-%A_%a.err'
 
 ### list the subjects that you want to submit in this array
 #SBATCH --array=1-8
@@ -25,7 +25,7 @@ start_env_afni_lmer
 
 echo "Running afni lmer"
 
-cd /work/desai-lab/xuanyang/Project/Semantic/analysis/ParametricModulation/Nastase/allstories/FactorAnalysis/models/Nvar113NFA8_LPAC_multipleReg_unsmoothed/FA8_HCPex/results/secondlevel/nonthreshold_LMEr_r1.1
+cd /work/desai-lab/xuanyang/Project/Semantic/analysis/ParametricModulation/Nastase/allstories/FactorAnalysis/models/Nvar113NFA8_LPAC_multipleReg_unsmoothed/FA8_HCPex/results/secondlevel/nonthreshold_LMEr_r1.2
 tcsh Batch_secondlevel_FA${SLURM_ARRAY_TASK_ID}
 
 date
