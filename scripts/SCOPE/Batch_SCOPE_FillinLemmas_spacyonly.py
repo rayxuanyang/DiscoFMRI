@@ -26,19 +26,54 @@ from gBatch_lemmatize import lemmatize_batch,lemmatize_step1,lemmatize_step2,lem
 Dir_github = '/work/desai-lab/xuanyang/Project/Semantic/dissemination/github/DiscoFMRI'
 repo = 'FactorAnalysis_fMRI'
 
-# skip if already done
-df = pd.read_excel(os.path.join(Dir_github,'data','SCOPE','data_with_metadata.xlsx'))
-df2 = pd.read_excel(os.path.join(Dir_github,'data','SCOPE','data_with_metadata.xlsx'),usecols=["Word"],keep_default_na=False, na_values=[])
-df['Word'] = df2['Word']
-for label in ['Word','NonWord']:
-    file = os.path.join(Dir_github,'data',f"SCOPE_{label.lower()}.csv")
-    df.loc[df['Status']==label].to_csv(file,index=False)
+# # skip if already done
+# df = pd.read_excel(os.path.join(Dir_github,'data','SCOPE','data_with_metadata.xlsx'))
+# df2 = pd.read_excel(os.path.join(Dir_github,'data','SCOPE','data_with_metadata.xlsx'),usecols=["Word"],keep_default_na=False, na_values=[])
+# df['Word'] = df2['Word']
+# for label in ['Word','NonWord']:
+#     file = os.path.join(Dir_github,'data',f"SCOPE_{label.lower()}.csv")
+#     df.loc[df['Status']==label].to_csv(file,index=False)
+scope_dir = os.path.join(Dir_github, 'data', 'SCOPE')
+scope_word_file = os.path.join(scope_dir, 'SCOPE_word.csv')
+
+if not os.path.isfile(scope_word_file):
+    print(f'Generating {scope_word_file}')
+
+    metadata_file = os.path.join(scope_dir, 'data_with_metadata.xlsx')
+
+    df = pd.read_excel(metadata_file)
+    df_word = pd.read_excel(
+        metadata_file,
+        usecols=['Word'],
+        keep_default_na=False,
+        na_values=[],
+    )
+    df['Word'] = df_word['Word']
+
+    df.loc[df['Status'] == 'Word'].to_csv(
+        scope_word_file,
+        index=False,
+    )
+else:
+    print(f'Using existing SCOPE word file: {scope_word_file}')
     
 # Load the file downloaded from the SCOPE database, which only contains real words. 
 # read the "Word" column separately to avoid a problem caused by some special words like "NA", 'nan'
 df_SCOPE_raw = pd.read_csv(os.path.join(Dir_github,'data','SCOPE',f"SCOPE_word.csv"))
-df = pd.read_csv(os.path.join(Dir_github,'data','SCOPE',f"SCOPE_word.csv"), usecols=["Word"], keep_default_na=False, na_values=[],encoding="latin-1")
-df_SCOPE_raw['Word'] = df['Word'] 
+# df = pd.read_csv(os.path.join(Dir_github,'data','SCOPE',f"SCOPE_word.csv"), usecols=["Word"], keep_default_na=False, na_values=[],encoding="latin-1")
+# df_SCOPE_raw['Word'] = df['Word'] 
+df_SCOPE_raw = pd.read_csv(scope_word_file)
+
+df_word = pd.read_csv(
+    scope_word_file,
+    usecols=['Word'],
+    keep_default_na=False,
+    na_values=[],
+    encoding='latin-1',
+)
+
+df_SCOPE_raw['Word'] = df_word['Word']
+
 df_SCOPE_raw = df_SCOPE_raw.loc[~df_SCOPE_raw['Word'].duplicated()].reset_index() # the word "used" is duplicated
 # # df_SCOPE.drop(columns=['Unnamed: 246'],inplace=True) # there is an extra column contains nothing 
 print(f'The original SCOPE database has {df_SCOPE_raw.shape[0]} words, {df_SCOPE_raw.shape[1]-3} variables.')
@@ -56,10 +91,14 @@ def lemmatize_step3only(df_SCOPE,nlp):
     
     df_SCOPE = df_SCOPE.set_index('Word').join(df_spacy.set_index('Word')[['Lemma_spacy','PoS_tag_spacy']], how='left').reset_index()
     
-    df_SCOPE['Lemma'] = df_SCOPE['Lemma_UKUS']
-    df_SCOPE['PoS_tag'] = df_SCOPE['PoS_UKUS']
-    df_SCOPE.loc[~df_SCOPE['Lemma_spacy'].isna(),'Lemma'] = df_SCOPE.loc[~df_SCOPE['Lemma_spacy'].isna(),'Lemma_spacy'] 
-    df_SCOPE.loc[~df_SCOPE['PoS_tag_spacy'].isna(),'PoS_tag'] = df_SCOPE.loc[~df_SCOPE['PoS_tag_spacy'].isna(),'PoS_tag_spacy']
+#     df_SCOPE['Lemma'] = df_SCOPE['Lemma_UKUS']
+#     df_SCOPE['PoS_tag'] = df_SCOPE['PoS_UKUS']
+#     df_SCOPE.loc[~df_SCOPE['Lemma_spacy'].isna(),'Lemma'] = df_SCOPE.loc[~df_SCOPE['Lemma_spacy'].isna(),'Lemma_spacy'] 
+#     df_SCOPE.loc[~df_SCOPE['PoS_tag_spacy'].isna(),'PoS_tag'] = df_SCOPE.loc[~df_SCOPE['PoS_tag_spacy'].isna(),'PoS_tag_spacy']
+    
+    df_SCOPE['Lemma'] = df_SCOPE['Lemma_spacy']
+    df_SCOPE['PoS_tag'] = df_SCOPE['PoS_tag_spacy']
+
     offset = time.time()
     print(f"Step3:\n---> {round(offset-onset,2)}s")
     return(df_SCOPE)
