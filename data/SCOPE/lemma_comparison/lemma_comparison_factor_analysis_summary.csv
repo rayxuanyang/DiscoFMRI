@@ -1,0 +1,7 @@
+Comparison,N_words,Same_words,Different_words,Percent_different,Distinct_pipeline_lemmas_in_differences,Distinct_spacy_lemmas_in_differences,Distinct_lemma_pairs
+Step 1: SUBTLEX-UK,13511,13111,400,2.9605506624232105,371,390,392
+Step 2: SUBTLEX-US + NLTK,100,82,18,18.0,17,18,18
+Step 3: spaCy fallback,239,239,0,0.0,0,0,0
+All words before Step 4,13850,13432,418,3.0180505415162457,386,407,409
+Step 4 special cases only,1,1,0,0.0,0,0,0
+Final after Step 4,13850,13432,418,3.0180505415162457,386,407,409
