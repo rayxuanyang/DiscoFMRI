@@ -1,0 +1,19 @@
+{
+  "scope_file": "/work/xy6/resources/SCOPE_wordonly_by052026.csv",
+  "vocabulary_file": "/work/desai-lab/xuanyang/Project/Semantic/analysis/FactorAnalysis/github/data/SCOPE_lemma_var106.csv",
+  "n_words": 13850,
+  "embedding_dimensions": 300,
+  "n_components": 8,
+  "normalization": "l2",
+  "pc_scores_z_standardized": true,
+  "lookup_order": [
+    "Word",
+    "Word_lower",
+    "Lemma",
+    "Lemma_lower"
+  ],
+  "embedding_source_counts": {
+    "Lemma": 2258,
+    "Word": 11592
+  }
+}
