@@ -1,0 +1,19 @@
+Cortical Division,lemma_mean_only,lemma_sum_only
+Auditory_Association,3,2
+Dorsal_Stream_Visual,0,1
+Dorsolateral_Prefrontal,1,0
+Early_Auditory,1,3
+Inferior_Frontal,4,5
+Inferior_Parietal,1,0
+Insula_FrontalOperc,4,2
+Lateral_Temporal,1,3
+MT + _Complex,2,2
+Medial_Temporal,0,1
+OrbPolaFrontal,2,1
+ParaCentral_MidCing,2,1
+Posterior_Cingulate,4,2
+Posterior_Opercular,1,0
+Premotor,1,0
+SomaSens_Motor,1,1
+TPO,1,1
+Ventral_Stream_Visual,1,0

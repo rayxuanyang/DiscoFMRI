@@ -1,0 +1,6 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+age_reference=22.2692810458
+rows=213 factors=8 output=/work/desai-lab/xuanyang/Project/Semantic/analysis/ParametricModulation/Nastase/allstories/FactorAnalysis/models/Nvar113NFA8_LPAC_multipleReg_unsmoothed_lemmaMean/FA8_HCPex/results/secondlevel/nonthreshold_LMEr_r1.4
+/work/desai-lab/xuanyang/Project/Semantic/analysis/ParametricModulation/Nastase/allstories/FactorAnalysis/models/Nvar113NFA8_LPAC_multipleReg_unsmoothed_lemmaMean/FA8_HCPex/results/secondlevel/nonthreshold_LMEr_r1.4/submit_parcelwise_lmer_default_partition.sh
+Submitted parcel-wise 3dLMEr array: 21885215
+Submitted validation job: 21885216

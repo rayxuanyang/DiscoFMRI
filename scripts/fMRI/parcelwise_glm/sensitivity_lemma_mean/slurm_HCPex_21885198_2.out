@@ -1,0 +1,16 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+row=002 subject=sub-023 task=milkyway
+row=018 subject=sub-079 task=milkyway
+row=034 subject=sub-091 task=prettymouth
+row=050 subject=sub-101 task=prettymouth
+row=066 subject=sub-110 task=prettymouth
+row=082 subject=sub-223 task=shapessocial
+row=098 subject=sub-265 task=piemanpni
+row=114 subject=sub-274 task=black
+row=130 subject=sub-285 task=black
+row=146 subject=sub-291 task=forgot
+row=162 subject=sub-298 task=bronx
+row=178 subject=sub-304 task=bronx
+row=194 subject=sub-309 task=forgot
+row=210 subject=sub-314 task=bronx
+written=112 skipped=0 output_root=/work/desai-lab/xuanyang/Project/Semantic/analysis/ParametricModulation/Nastase/allstories/FactorAnalysis/models/Nvar113NFA8_LPAC_multipleReg_unsmoothed_lemmaMean/FA8_HCPex/results/firstlevel
